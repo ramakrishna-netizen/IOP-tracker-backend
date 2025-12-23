@@ -1,0 +1,27 @@
+# Glaucoma Detection Pipeline - Requirements
+# GPU-accelerated training with TensorFlow 2.10.0
+
+# Core ML Framework
+tensorflow==2.10.0
+numpy<2
+keras==2.10.0
+
+# Data Processing
+pandas>=2.0.0
+scikit-learn>=1.3.0
+opencv-python>=4.8.0
+Pillow>=9.5.0
+
+# Visualization & Analysis
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# API & Server
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+
+# Utilities
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+requests>=2.31.0

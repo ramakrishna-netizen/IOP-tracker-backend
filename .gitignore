@@ -1,0 +1,129 @@
+# Virtual Environments
+.my-venv/
+.venv/
+venv/
+env/
+ENV/
+.env
+.myvenv/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Data and datasets (large files)
+datasets/
+data/
+raw_data/
+
+# Generated CSV files from data processing
+combined_training_labels.csv
+derived_labels.csv
+acrima_labels.csv
+merge_diagnostics.json
+
+# Model artifacts and training outputs
+models/*.keras
+models/*.h5
+models/logs/
+training_logs/
+*.ckpt
+checkpoints/
+
+# But DO track model metadata (lightweight JSON)
+!models/model_metadata.json
+# Keep segmentation model used by server (small, tracked on purpose)
+!models/segmentation/ocod_unet_segmenter.h5
+
+# Generated plots and visualizations (optional - comment out to track)
+models/training_history.png
+models/roc_curve.png
+models/confusion_matrix.png
+
+# Validation/prediction outputs (optional - comment out to track)
+models/val_predictions.csv
+
+# TensorBoard and logging
+runs/
+logs/
+*.log
+
+# Temporary and test files
+temp.py
+temp2.py
+test_*.py
+*_test.py
+.temp/
+.tmp/
+
+# OS-specific files
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Output directories
+outputs/
+results/
+predictions/
+
+# User documentation that may be local-only
+LOCAL_*.md
+*.bak
+*.tmp
+
+# Large binary files
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Sample/demo files that are not part of core codebase
+licensed-image.jpeg
+sample_*.py
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Miscellaneous temp files
+suggestions.txt
+___images_required/
+
+# Archived unneeded files (moved by cleanup)
+archive/
